@@ -24,6 +24,11 @@ header {
     transition: all 0.3s ease 0s;
 }
 
+.nav-links li a:visited {
+    text-decoration: none;
+    color: #1B1E22;
+}
+
 .nav-links a.active {
     text-decoration: underline;
     text-decoration-thickness: .15em;
@@ -55,11 +60,10 @@ header button:hover {
 @media only screen and (max-width: 692px) {
     header {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        flex-direction: column;
         padding: 2em 0;
-        padding-right: none;
+        padding-right: 0;
         font-weight: bolder;
     }
 
