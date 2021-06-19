@@ -58,7 +58,7 @@ header button:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2em;
+        padding: 2em 0;
         padding-right: none;
         font-weight: bolder;
     }
