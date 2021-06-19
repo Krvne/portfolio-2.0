@@ -1,0 +1,174 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6em;
+}
+
+main .box {
+    width: 68em;
+    height: 33em;
+    box-shadow: 0px 19px 39px -3px rgba(0, 0, 0, 0.5);
+    border-radius: 163px;
+}
+
+main .info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em;
+}
+
+main .me {
+    width: 28em;
+    height: auto;
+    box-shadow: 10px 16px 45px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 500px;
+}
+
+main .logo {
+    width: 28em;
+    height: auto;
+}
+
+main .center-padding {
+    padding-right: 2.5em;
+}
+
+main .left-padding {
+    padding-left: 2em;
+}
+
+main .box-container h1, h2, p {
+    color: #f7f7ff;
+}
+
+.b-blue {
+    background: #23a5dc;
+}
+
+.b-gray {
+    background: #3f403a;
+}
+
+main .info-centered {
+    text-align: center;
+}
+
+main .learn-button {
+    text-align: center;
+    padding-top: .8em;
+    padding-right: 6em;
+}
+
+main button {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    font-size: large;
+    padding: 15px 35px;
+    background-color: #f7f7ff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+main button:hover {
+    background-color: #3f403a;
+    color: #f7f7ff;
+}
+
+main #show-mobile {
+    display: none;
+}
+
+main #hide-mobile {
+    display: flex;
+}
+
+@media only screen and (max-width: 922px) {
+    .box-container {
+        display: block;
+    }
+
+    main .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5em;
+    }
+
+    main .box {
+        width: auto;
+        height: auto;
+    }
+
+    main .center-padding {
+        padding-right: 0;
+    }
+
+    main .box .box-text-center {
+        text-align: center;
+    }
+
+    main .learn-button {
+        padding-right: 0;
+
+    }
+
+    main #show-mobile {
+        display: flex;
+    }
+
+    main #hide-mobile {
+        display: none;
+    }
+
+    main .left-padding {
+        padding-left: 0;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 590px) {
+    main .box {
+        border-radius: 80px;
+    }
+
+    main .box-container h1 {
+        font-size: large;
+    }
+
+    main .box-container h2 {
+        font-size: small;
+    }
+
+    main .box-container p {
+        font-size: small;
+    }
+
+    main .top-padding {
+        padding-top: 1em;
+    }
+
+
+    main .center-image {
+        text-align: center;
+    }
+
+    main .me {
+        width: 100%;
+    }
+
+    main .logo {
+    width: 100%;
+    }
+
+}

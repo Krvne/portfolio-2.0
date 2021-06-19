@@ -3,13 +3,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 2%;
+    padding: 2em 3em;
     padding-right: 4%;
     font-weight: bolder;
 }
 
 .nav-links {
     list-style-type: none;
+    padding: 0;
+    padding-left: 2em;
 }
 
 .nav-links li {
@@ -24,30 +26,49 @@ header {
 
 .nav-links a.active {
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: .15em;
     text-decoration-color: #1B1E22;
-}
-
-.nav-links a.active:hover {
-    text-decoration-color: #23a5dc;
 }
 
 .nav-links li a:hover {
     color: #23a5dc;
+    text-decoration-color: #23a5dc;
+
 }
 
-button {
+header button {
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
     padding: 9px 25px;
     background-color: #23a5dc;
     border: none;
-    border-radius: 50px;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+header button:hover {
     background-color: #3f403a;
     color: #f7f7ff;
+}
+
+@media only screen and (max-width: 692px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        padding-right: none;
+        font-weight: bolder;
+    }
+
+    .nav-links li {
+        display: flex;
+        padding: 1em;
+    }
+
+    .nav-links {
+        padding-left: 0;
+    }
 }
