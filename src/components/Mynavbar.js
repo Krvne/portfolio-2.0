@@ -6,12 +6,17 @@ const Mynavbar = () => {
     const currentPage = window.location.pathname
     const hamburger = require('./images/hamburger.png')
 
-    // const ham = document.getElementById('hamburger')
-    // const navUl = document.getElementById('nav-ul')
+    let showLinks = false
 
-    // ham.addEventListener('click', () => {
-    //     navUl.classList.toggle('show')
-    // })
+    function mobileNavToggle() {
+        console.log('working')
+        if (showLinks === false) {
+            showLinks = true
+        } else if (showLinks === true) {
+            showLinks = false
+        }
+        console.log(showLinks)
+    }
 
     return (
         <>
@@ -25,19 +30,19 @@ const Mynavbar = () => {
                 </nav>
                 <a href='/contact'><button>Contact</button></a>
             </header>
-            {/* <header id='show-mobile'>
-                <div className='nav'>
+            <header id='show-mobile'>
+                <div className='nav-items'>
                     <a href='/'><img class="logo" src={logo.default} width='60' height='60' alt='logo' /></a>
-                    <a className='right-padding' href='/contact'><button>Contact</button></a>
-                    <button id='hamburger' href='#'><img className='hamburger' src={hamburger.default} alt='' /></button>
+                    <a href='/contact'><button>Contact</button></a>
+                    <a id='hamburger' href='#' onClick={mobileNavToggle}><img className='hamburger' src={hamburger.default} alt='' width='60' /></a>
                 </div>
-                <div>
-                    <ul class="nav-links" id='nav-ul'>
+                <div className={(showLinks === false) ? 'links' : 'links show'}>
+                    <ul class="nav-links">
                         {(currentPage === '/') ? <li><a className='active' href='/'>Home</a></li> : <li><a href='/'>Home</a></li>}
                         {(currentPage === '/about') ? <li><a className='active' href='/about'>About</a></li> : <li><a href='/about'>About</a></li>}
                     </ul>
                 </div>
-            </header> */}
+            </header>
         </>
 
     )
