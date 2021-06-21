@@ -10,6 +10,13 @@ main .contact-form-box {
     border: solid #1b1e22;
 }
 
+.form-box-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6em;
+}
+
+
 main .contact-form {
     display: flex;
     flex-direction: column;
@@ -62,6 +69,7 @@ form input[type=submit] {
     font-weight: bolder;
     cursor: pointer;
     transition: all 0.3s;
+    padding-left: 0;
 }
 
 form input[type=submit]:hover {
@@ -91,13 +99,52 @@ main .contact-form textarea::placeholder {
     color: #9299a1;
 }
 
-@media only screen and (max-width: 922px) {
+@media only screen and (max-width: 1000px) {
     main .contact-form-box {
+        display: block;
         width: auto;
         height: auto;
     }
+
+    .form-box-container {
+        display: block;
+        justify-content: center;
+        padding-bottom: 6em;
+    }
+    
+    
+    main .contact-form {
+        padding: 20px 40px;
+        padding-top: 60px;
+    }
+        
+    main .contact-form input {
+        width: auto;
+    }
+            
+    form input[type=submit] {
+        width: 40%;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
+    main .contact-form-box {
+        border-radius: 100px;
+    }
+
+    form input[type=submit] {
+        width: 60%;
+    }
+
+    main .contact-form {
+        padding: 10px 15px;
+        padding-top: 30px;
+    }
+
+    main .contact-form label {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }    
 
 }
