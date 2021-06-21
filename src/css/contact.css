@@ -23,7 +23,8 @@ main .contact-form {
 }
 
 main .contact-form label {
-    color: #f7f7ff;
+    color: #1b1e22;
+    font-weight: bolder;
     font-size: x-large;
     padding-left: 1em;
     padding-bottom: .2em;
