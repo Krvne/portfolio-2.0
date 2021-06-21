@@ -39,7 +39,7 @@ main .contact-form input {
     height: 3em;
     border-radius: 30px;
     border: solid 2px #1b1e22;
-    padding-left: 1em;
+    padding: 0 1em;
     background: #f7f7ff;
     color: #1b1e22;
     box-shadow: 0px 19px 39px -3px rgba(0, 0, 0, 0.5);
@@ -58,8 +58,7 @@ main form .form-group {
     font-size: medium;
     border-radius: 30px;
     border: solid 2px #1b1e22;
-    padding-left: 1em;
-    padding-top: 1em;
+    padding: 1em;
     background: #f7f7ff;
     color: #1b1e22;
     box-shadow: 0px 19px 39px -3px rgba(0, 0, 0, 0.5);
@@ -72,7 +71,7 @@ form input[type=submit] {
     font-weight: bolder;
     cursor: pointer;
     transition: all 0.3s;
-    padding-left: 0;
+    padding: 0 0;
     text-align: center;
 }
 
