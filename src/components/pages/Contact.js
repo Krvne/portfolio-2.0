@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import '../../css/contact.css'
 
 const Contact = () => {
+
+    let [messageSent, sendMessage] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
@@ -14,6 +16,10 @@ const Contact = () => {
                 console.log(error.text);
             });
         e.target.reset()
+
+        sendMessage(messageSent = true)
+        console.log(messageSent)
+
     }
 
     return (
@@ -36,6 +42,10 @@ const Contact = () => {
                             </div>
                             <div className='form-group submit'>
                                 <input className='submit-button' type='submit' name='submit' />
+                            </div>
+                            <div className={(messageSent === true) ? 'hide-confirm show' : 'hide-confirm'}>
+                                <p className='sent-message'>Your message has been sent!</p>
+                                <p className='sent-message'>I will get back to you as soon as possible.</p>
                             </div>
                         </form>
                     </div>
