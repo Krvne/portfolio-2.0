@@ -108,6 +108,14 @@ header button:hover {
         opacity: 100;
     }
 
+    .hamburger {
+        transition: all 0.2s;
+    }
+
+    .hamburger.show {
+        transform: rotate(-45deg);
+    }
+
     .nav-items {
         display: flex;
         justify-content: space-between;

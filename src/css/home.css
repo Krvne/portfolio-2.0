@@ -11,6 +11,9 @@
 }
 
 main .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 68em;
     height: 33em;
     box-shadow: 0px 19px 39px -3px rgba(0, 0, 0, 0.5);
@@ -133,6 +136,9 @@ main #hide-mobile {
         padding-left: 0;
     }
     
+    main .top-padding {
+        padding-top: 1em;
+    }
 
 
 }
@@ -164,6 +170,14 @@ main #hide-mobile {
     }
 
     main .me {
+        width: 100%;
+    }
+
+    main .qut-logo {
+        width: 100%;
+    }
+
+    main .colage {
         width: 100%;
     }
 

@@ -1,0 +1,52 @@
+.b-green {
+    background: #49d49d;
+}
+
+main .qut-logo {
+    width: 28em;
+    height: auto;
+    box-shadow: 10px 16px 45px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 90px;
+}
+
+main .colage {
+    width: 25em;
+    height: auto;
+}
+
+
+.not-bold h2 {
+    font-weight: 100;
+}
+
+main .text-right {
+    text-align: right;
+}
+
+main .text-black {
+    color: #1b1e22;
+}
+
+main .right-padding {
+    padding-right: 1.5em;
+    padding-left: 1em;
+}
+
+@media only screen and (max-width: 590px) {
+    main .qut-logo {
+        border-radius: 80px;
+        width: 100%;
+    }
+
+    main .colage {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+    main .qut-logo {
+        border-radius: 40px;
+        width: 100%;
+    }
+}
